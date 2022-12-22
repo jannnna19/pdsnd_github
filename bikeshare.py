@@ -9,10 +9,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 from ast import Break
 
 
-
 def get_filters():
-  
-
     """
     Asks user to specify a city, month, and day to analyze.
 
