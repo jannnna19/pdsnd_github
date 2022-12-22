@@ -166,8 +166,8 @@ def user_stats(df):
     if 'gender' in df:
       print("count of user gender \n ",df["Gender"].value_counts());
 
-
     # TO DO: Display earliest, most recent, and most common year of birth
+    
 
 def user_stats_birthyeare(df):
     if 'Birth Year' in df:
