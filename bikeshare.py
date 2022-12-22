@@ -49,7 +49,6 @@ def get_filters():
     print('-'*40)
     return city,month,day
      
-    
 
 def load_data(city, month, day):
     """
@@ -85,8 +84,6 @@ def load_data(city, month, day):
         # filter by day of week to create the new dataframe
         df = df[df['day_of_week'] == day.title()]
 
-   
-
     return df
 
 
@@ -120,18 +117,17 @@ def station_stats(df):
     start_time = time.time()
 
     # TO DO: display most commonly used start station
-    start_st= df['Start Station'].mode()[0]
-    print("the most commonly used start station is ",start_st)
+    start_st = df['Start Station'].mode()[0]
+    print("the most commonly used start station is ", start_st)
 
     # TO DO: display most commonly used end station
-    end_st= df['End Station'].mode()[0]
-    print("the most commonly used End station is" ,end_st)
+    end_st = df['End Station'].mode()[0]
+    print("the most commonly used End station is", end_st)
 
     # TO DO: display most frequent combination of start station and end station trip
 
     combination = (df['Start Station'] + "||" + df['End Station']).mode()[0]
     print("The most frequent combination of start station and end station trip is : " + str(combination.split("||")))
-
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
@@ -168,8 +164,8 @@ def user_stats(df):
     if 'gender' in df:
       print("count of user gender \n ",df["Gender"].value_counts());
 
-
     # TO DO: Display earliest, most recent, and most common year of birth
+
 
 def user_stats_birthyeare(df):
     if 'Birth Year' in df:
