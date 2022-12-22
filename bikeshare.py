@@ -84,8 +84,6 @@ def load_data(city, month, day):
         # filter by day of week to create the new dataframe
         df = df[df['day_of_week'] == day.title()]
 
-   
-
     return df
 
 
@@ -167,7 +165,7 @@ def user_stats(df):
       print("count of user gender \n ",df["Gender"].value_counts());
 
     # TO DO: Display earliest, most recent, and most common year of birth
-    
+
 
 def user_stats_birthyeare(df):
     if 'Birth Year' in df:
